@@ -1,0 +1,58 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+  <title>SendIT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <!--<link rel="stylesheet" href="css/media.css">-->
+</head>
+<body>
+  <div id="page-wrap">
+    <nav id="nav-tabs">
+        <tab><a id="Home" class="tabs" href="home.html">Home</a></tab>
+        <tab><a class="tabs" href="about.html">About</a></tab>
+        <tab><a class="tabs" href="quotation.html">Quotation</a></tab>
+        <tab><a class="tabs" href="signup.html">Signup</a></tab>
+        <tab><a class="tabs" href="login.html">Login</a></tab>
+        <p class="right" id='login'>
+            <a class="links" href="login.html"><em>Login</em></a> |
+            <a class="links" href="signup.html"><em>Signup</em></a>
+        </p>
+    </nav >
+    <header>
+      <script src="js/header.js"></script>
+    </header>
+    <div class="container" id="section1">
+      <article class="column">
+        <div id="reviews">
+          <h3>User Reviews</h3>
+          <ul>
+            <li>Review1</li>
+            <li>Review2</li>
+            <li>Review3</li>
+            <li>Review4</li>
+          </ul>
+        </div>
+      </article>
+      <aside class="column" id="section2">
+        <div id="notifications">
+        </div>
+        <div class="container" id="body">
+          <div class="column" id="main">
+            <div id="Map" style="width: 100%; height: 445px"></div>
+          </div>
+          <div class="column" id="section3">
+            <script type="text/javascript" src="js/locations.js"></script>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="container">
+      <script type="text/javascript" src="js/footer.js"></script>
+    </footer>
+  </div>
+<script type="text/javascript" src=js/map.js></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+</html>
