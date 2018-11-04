@@ -1,0 +1,78 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+  <title>SendIT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" class="tabs" href="css/main.css">
+  <link rel="stylesheet" class="tabs" href="css/media.css">
+  <link rel="stylesheet" class="tabs" href="css/login.css">
+</head>
+<body>
+  <div id="page-wrap">
+    <nav id="nav-tabs">
+        <tab><a id="Home" class="tabs" href="home.html">Home</a></tab>
+        <tab><a class="tabs" href="quotation.html">Quotation</a></tab>
+        <tab><a class="tabs" href="signup.html">Signup</a></tab>
+        <tab><a class="tabs" href="login.html">Login</a></tab>
+        <p class="right" id='login'>
+          <a class="links" href="login.html" id="login"><em>Signup</em></a>
+        </p>
+    </nav >
+    <header>
+      <script src="js/header.js"></script>
+    </header>
+    <div class="container" id="section1">
+      <article class="column" id="Map">
+      </article>
+      <aside class="column" id="section2">
+        <div id="notifications">
+        </div>
+        <div class="container" id="body">
+          <div class="column" id="main">
+            <p><b><em>Login!</em></b></p>
+            <div class="login-wrapper">
+            <h4>Login with email or connect using social media</h4>
+            <form id="form" form-action="/action_page.php">
+                <div class="left" id="legacy">
+                    <label for="email" class="left">Email or User Name:</label><br>
+                    <input type="email" class="input" placeholder="Enter email"><br>
+                    <label for="pwd" class="left">Password:</label><br>
+                    <input type="password" name="pwd" class="input" placeholder="Enter password"><br><br>
+                    <input type="submit" class="input" id="submit" value="submit"><br>
+                    <sub>Forgot password? <span><a class="tabs" href="password recovery"><em>recover password</em></a></span> here</sub><br>
+                    <label for="remember_me" class="left" id="rem" >Keep me logged in</label>
+                    <input type="checkbox" id="remember_me" name="_remember_me" class="left" checked /><br>
+                </div>
+                <div class="right" id="social">
+                    <ul>
+                    <li>
+                        <a class="tabs" href="" class="facebook">facebook</a>
+                    </li><br>
+                    <li>
+                        <a class="tabs" href="" class="twitter">twitter</a>
+                    </li><br>
+                    <li>
+                        <a class="tabs" href="" class="google">google</a>
+                    </li><br>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </form>
+            <p>Have no account? click<a href="signup.html"><em> here</em></a> to Signup</p>
+            </div>
+          </div>
+          <div class="column" id="section3">
+            <script type="text/javascript" src="js/locations.js"></script>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="container">
+      <script type="text/javascript" src="js/footer.js"></script>
+    </footer>
+    <script type="text/javascript" src=js/map.js></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  </div>
+</body>
+</html>
