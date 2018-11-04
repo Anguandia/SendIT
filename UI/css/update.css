@@ -1,0 +1,14 @@
+#update_location, #update_status, change_pwd{
+    display: none;
+}
+.stat{
+    background: purple;
+    width: 80%;
+    margin: 2% 5% 2% 5%;
+    padding-top: 2%;   
+    padding-bottom: 2%; 
+    font-weight: bold;  
+}
+#pwd{
+    margin-top: 50%;
+}

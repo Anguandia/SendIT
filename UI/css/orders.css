@@ -1,0 +1,69 @@
+/**style sheet for search and sort table data*/
+* {
+    box-sizing: border-box;
+  }
+  /*input box sizeand styling*/
+  #orderID, #orderl {
+    font-size: 14px;
+    padding: 1%;
+    border: 1px solid red;
+    margin: 5%;
+    border-radius: 6px;
+  }
+  /*button for reversing sorting/searching order*/
+  #reverse{
+    margin: 1%;
+  }
+  /*styles for actual table*/
+  #all_posts {
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 12px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  #data{
+      width: 110%;
+      padding: 0%;
+      margin: 0%;
+  }
+  table #th1{
+    width:60%;
+  }
+  table #th2{
+    width:25%;
+  }
+  table #th3{
+    width:15%;
+    border-right: none;
+  }
+  
+  td {
+    text-align: left;
+    font-size: 14px;
+    padding-left: 2%;  
+  }
+  th {
+    text-align: center;
+    font-size: 14px;
+    background: navy;
+    color: white;
+    border-right: solid 0.1px white;  
+  }
+  
+  #all_orders tr {
+    border-bottom: none;
+  }
+  
+  #all_orders tr.header {
+    padding: 0.5%;
+  }
+  #all_orders tr:hover{
+    background: rgb(200, 134, 216);
+    cursor: pointer;
+  }
+  tr:nth-child(even) {
+    background-color: lightgray;
+  }
+  #main{
+    padding-bottom: 4%;
+  }

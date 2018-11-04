@@ -1,0 +1,15 @@
+.cancel{
+    font-size: 120%;
+    padding-top: 5%;
+    margin: auto;
+    width: 100%;
+}
+#section3{
+    padding: 5% 0.5%;
+}
+#_cancel{
+    color: orange;
+}
+#red{
+    color: rgb(245, 8, 8);
+}

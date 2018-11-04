@@ -1,0 +1,46 @@
+#signup-wrapper{
+    width: 80%;
+    margin: 0% auto;
+}
+#signup-form{
+    width: 100%;
+    background: purple;
+    padding-bottom: 2%;
+}
+#signup-form #one, #signup-form #two{
+    width: 50%;
+    padding-top: 3%;
+}
+.one{
+    width: 90%;
+    margin: 0.5% 6.667%;
+    padding: 2%;
+}
+.two{
+    width: 90%;
+    margin: 0.5% 3.333%;
+    padding: 2%;
+}
+#one label{
+    margin: auto 6.667%;
+}
+#two label{
+    margin-left: 3.333%;
+}
+sub a{
+    color: white;
+}
+#submit{
+    width: 93.333%;
+    background: navy;
+    color: white;
+    margin-left: 3.333%;  
+    padding: 1%; 
+}
+sub{
+    margin-left: 15%;
+}
+#main p{
+    text-align: center;
+    margin-top: 2%;
+}
