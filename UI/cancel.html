@@ -1,0 +1,50 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+  <title>SentIT Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" class="tabs" href="css/main.css">
+  <link rel="stylesheet" class="tabs" href="css/media.css">
+  <link rel="stylesheet" class="tabs" href="css/order_view.css">
+  <link rel="stylesheet" class="tabs" href="css/cancel.css">
+  <link rel="stylesheet" class="tabs" href="css/user_menu.css">
+</head>
+<body>
+  <div id="page-wrap">
+    <nav id="nav-tabs">
+        <tab><a id="Home" class="tabs" href="home.html">Home</a></tab>
+        <tab><a class="tabs" href="quotation.html">Quotation</a></tab>
+        <tab><a class="tabs" href="home.html">Logout</a></tab>
+    </nav >
+    <header>
+      <script src="js/header.js"></script>
+    </header>
+    <div class="container" id="section1">
+      <article class="column" id="Map">
+      </article>
+      <aside class="column" id="section2">
+        <div id="notifications">
+            <script src="js/notifications.js"></script>
+        </div>
+        <div class="container" id="body">
+            <div class="column" id="main">
+                <script src="js/user_menu.js"></script>
+                <script src="js/order_view.js"></script>
+            </div>
+            <div class="column" id="section3">
+                <button class="cancel" id="red" onclick="confirmCancel()">Cancel Order</button>
+            </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="container">
+      <script type="text/javascript" src="js/footer.js" id="script"></script>
+    </footer>
+  </div>
+  <script type="text/javascript" src=js/map.js></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  <script type="text/javascript" src=js/cancel.js></script>
+  <script type="text/javascript" src=js/confirmed.js></script>
+</body>
+</html>
