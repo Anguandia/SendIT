@@ -1,0 +1,51 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+  <title>SentIT Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" class="tabs" href="css/main.css">
+  <link rel="stylesheet" class="tabs" href="css/media.css">
+  <link rel="stylesheet" class="tabs" href="css/orders.css">
+</head>
+<body>
+  <div id="page-wrap">
+    <nav id="nav-tabs">
+        <tab><a id="Home" class="tabs" href="home.html">Home</a></tab>
+        <tab><a class="tabs" href="quotation.html">Quotation</a></tab>
+        <tab><a class="tabs" href="home.html">Logout</a></tab>
+    </nav >
+    <header>
+      <script src="js/header.js"></script>
+    </header>
+    <div class="container" id="section1">
+      <article class="column" id="Map">
+      </article>
+      <aside class="column" id="section2">
+        <div id="notifications">
+            <script src="js/notifications.js"></script>
+        </div>
+        <div class="container" id="body">
+            <div class="column" id="main">
+                <script src="js/order_form.js"></script>
+                <script>
+                    function myFunction() {
+                    document.getElementById("ans").innerHTML = "<textarea cols = '50' rows = '20' name='text' id='text_id' class='form-control' style='resize:vertical' ></textarea>";
+                    };
+                    myFunction()
+                </script>
+            </div>
+            <div class="column" id="section3">
+              <script type="text/javascript" src="js/orders.js"></script>
+            </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="container">
+      <script type="text/javascript" src="js/footer.js" id="script"></script>
+    </footer>
+  </div>
+  <script type="text/javascript" src=js/map.js></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+</html>
