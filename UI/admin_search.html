@@ -1,0 +1,47 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+  <title>SendIT</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/user_menu.css">
+  <link rel="stylesheet" href="css/orders_view.css">
+</head>
+<body>
+  <div id="page-wrap">
+    <nav id="nav-tabs">
+        <tab><a id="Home" href="home.html">Home</a></tab>
+        <tab><a href="home.html">Logout</a></tab>
+    </nav >
+    <header>
+      <script src="js/header.js"></script>
+    </header>
+    <div class="container" id="section1">
+      <article class="column"id="Map">
+      </article>
+      <aside class="column" id="section2">
+        <div id="notifications">
+          <script type="text/javascript" src="js/notifications.js"></script>
+        </div>
+        <div class="container" id="body">
+          <div class="column" id="main">
+            <script src="js/admin_menu.js"></script>
+            <script src="js/user_search.js"></script>
+            <script src="js/search.js"></script>
+          </div>
+          <div class="column" id="section3">
+            <script type="text/javascript" src=js/orders.js></script>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="container">
+      <script type="text/javascript" src="js/footer.js"></script>
+    </footer>
+  </div>
+  <script type="text/javascript" src=js/map.js></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=''&callback=myMap"></script>
+</body>
+</html>
