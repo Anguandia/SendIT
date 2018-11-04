@@ -1,0 +1,66 @@
+<!--DOCTYPE html-->
+<html lang="en">
+<head>
+  <title>SentIT Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" class="tabs" href="css/main.css">
+  <link rel="stylesheet" class="tabs" href="css/media.css">
+  <link rel="stylesheet" class="tabs" href="css/rders.css">
+  <link rel="stylesheet" class="tabs" href="css/order_view.css">
+</head>
+<body>
+  <div id="page-wrap">
+    <nav id="nav-tabs">
+        <tab><a id="Home" class="tabs" href="home.html">Home</a></tab>
+        <tab><a class="tabs" href="quotation.html">Quotation</a></tab>
+        <tab><a class="tabs" href="home.html">Logut</a></tab>
+    </nav >
+    <header>
+      <script src="js/header.js"></script>
+    </header>
+    <div class="container" id="section1">
+      <article class="column" id="Map">
+      </article>
+      <aside class="column" id="section2">
+        <div id="notifications">
+            <script src="js/notifications.js"></script>
+        </div>
+        <div class="container" id="body">
+            <div class="column" id="main">
+                <script src="js/order_view.js"></script>
+            </div>
+            <div class="column" id="section3">
+                <h4>New Destination details</h4>
+            <div id="new_dest">
+                <form action="" id="change_dest">
+                    <label for="dest1" class="new">Address1:</label><br>
+                    <input type="text" name="dest1" class="" placeholder="  Country"><br>
+                    <label for="dest2"  class="new">Address2:</label><br>
+                    <input type="text" placeholder="  City" class="" name="dest2" id="dest2"><br>
+                    <label for="dest3"  class="new">Address3:</label><br>
+                    <input type="text" placeholder="  County" class="" name="dest3" id="dest3"><br>
+                    <label for="dest4"  class="new">Address4:</label><br>
+                    <input type="text" placeholder="  Division" class="" name="dest4" id="dest4"><br>
+                    <label for="dest5"  class="new">Address5:</label><br>
+                    <input type="text" placeholder="  Village" class="" name="dest5" id="dest5"><br>
+                    <label for="dest6"  class="new">Address6:</label><br>
+                    <input type="text" placeholder="  Street" class="" name="dest6" id="dest6"><br>
+                    <label for="dest7"  class="new">Address7:</label><br>
+                    <input type="text" placeholder="  Block" class="" name="dest7" id="dest7"><br>
+                    <label for="dest8"  class="new">Address8:</label><br>
+                    <input type="text" placeholder="  Floor" class="" name="dest8" id="dest8">
+                </form>
+            </div>
+            </div>
+        </div>
+      </aside>
+    </div>
+    <footer class="container">
+      <script type="text/javascript" src="js/footer.js" id="script"></script>
+    </footer>
+  </div>
+  <script type="text/javascript" src=js/map.js></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+</body>
+</html>
