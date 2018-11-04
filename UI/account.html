@@ -1,19 +1,23 @@
 <!--DOCTYPE html-->
 <html lang="en">
 <head>
-  <title>SendIT</title>
+  <title>SentIT Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/media.css">
-  <link rel="stylesheet" href="css/orders_view.css">
-  <link rel="stylesheet" href="css/update_pass.css">
+  <link rel="stylesheet" class="tabs" href="css/main.css">
+  <link rel="stylesheet" class="tabs" href="css/media.css">
+  <link rel="stylesheet" class="tabs" href="css/change_pwd.css">
+  <link rel="stylesheet" class="tabs" href="css/orders.css">
 </head>
 <body>
   <div id="page-wrap">
     <nav id="nav-tabs">
-        <tab><a id="Home" href="home.html">Home</a></tab>
-        <tab><a href="home.html">Logut</a></tab>
+        <tab><a id="Home" class="tabs" href="home.html">Home</a></tab>
+        <tab><a class="tabs" href="quotation.html">Quotation</a></tab>
+        <tab><a class="tabs" href="home.html">Logout</a></tab>
+        <p class="right" id='login'>
+            <a class="links" href="logout.html" id="login"><em>Logout</em></a>
+        </p>
     </nav >
     <header>
       <script src="js/header.js"></script>
@@ -23,33 +27,33 @@
       </article>
       <aside class="column" id="section2">
         <div id="notifications">
-          <script type="text/javascript" src="js/admin_notifications.js"></script>
+          <script type="text/javascript" src="js/notifications.js"></script>
         </div>
         <div class="container" id="body">
           <div class="column" id="main">
-            <!--<button class="" onclick="changePassword()" id="pwd">Change Password</button>-->
-            <form id="newpwd" form-action="/action_page.php">
-                <label for="old_pwd">Old Password:<span style='color:red'>*</span></label><br>
-                <input type="password" name="old_pwd" class="passin" placeholder="Enter old password"><br>
-                <label for="new_pwd1">New Password:<span style='color:red'>*</span></label><br>
-                <input type="password" name="new_pwd1" class="passin" placeholder="Enter new password"><br>
-                <label for="new_pwd2">Repeat New Password:<span style='color:red'>*</span></label><br>
-                <input type="password" name="new_pwd2" class="passin" placeholder="Repeat new password"><br>
-                <input type="submit" id="sub_new" value="submit"><br>
+          <button id="change_pwd" onclick="changePassword()">Change Password</button>
+            <div id="signup-wrapper">
+            <form id="signup-form" form-action="/action_page.php">
+                    <label  for="last-name">Last name:<span style='color:red'>*</span></label><br>
+                    <input type="text" class="two" placeholder="Enter your last name"><br>
+                    <label  for="email">Email:<span style='color:red'>*</span></label><br>
+                    <input type="email" class="two" placeholder="Enter email"><br>
+                    <label  for="pwd">Password:<span style='color:red'>*</span></label><br>
+                    <input type="password" name="pwd" class="two" placeholder="Repeat password"><br>
+                    <input type="submit" id="submit" class="two" value="submit"><br>
             </form>
             </div>
-          </div>
+            </div>
           <div class="column" id="section3">
-            <!--<script type="text/javascript" src="js/orders.js"></script>-->
+            <h4>Untracked Orders</h4>
+            <script type="text/javascript" src="js/orders.js"></script>
           </div>
-          </div>
-        </div>
       </aside>
     </div>
     <footer class="container">
-      <script type="text/javascript" src="js/footer.js"></script>
+      <script type="text/javascript" src="js/footer.js" id="script"></script>
     </footer>
-  </div>  
+  </div>
   <script type="text/javascript" src=js/map.js></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   <script type="text/javascript" src=js/change_pwd.js></script>
