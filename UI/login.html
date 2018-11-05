@@ -36,13 +36,15 @@
             <form id="form" form-action="/action_page.php">
                 <div class="left" id="legacy">
                     <label for="email" class="left">Email or User Name:</label><br>
-                    <input type="email" class="input" placeholder="Enter email"><br>
+                    <input type="email" class="input" placeholder="Enter email or username"><br>
                     <label for="pwd" class="left">Password:</label><br>
                     <input type="password" name="pwd" class="input" placeholder="Enter password"><br><br>
                     <input type="submit" class="input" id="submit" value="submit"><br>
                     <sub>Forgot password? <span><a class="tabs" href="password recovery"><em>recover password</em></a></span> here</sub><br>
-                    <label for="remember_me" class="left" id="rem" >Keep me logged in</label>
-                    <input type="checkbox" id="remember_me" name="_remember_me" class="left" checked /><br>
+                    <label for="remember" class="left check" >Keep me logged in</label>
+                    <input type="checkbox" name="remember" class="left check" checked/>
+                    <label for="user_type" class="left check" >Admin Login</label>
+                    <input type="checkbox" name="remember" class="left check"/><br>
                 </div>
                 <div class="right" id="social">
                     <ul>
