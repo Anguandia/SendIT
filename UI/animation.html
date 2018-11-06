@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+#t{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation-name: example;
+    animation-duration: 8s;
+    top: 150px;
+}
+#s{
+    width: 50px;
+    height: 1px;
+    left: 40px;
+    top: 0;
+    background-color: yellow;
+    position: relative;
+    animation-name: p;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    12.5%   {background-color:red; left:0px;}
+    50%  {background-color:yellow; left:90%; top:150px;}
+    100% {background-color:red; left:0px; top:150px;}
+}
+@keyframes p {
+    0%   {top:0px;}
+    10% {height:50px;}
+    100% {top:200px;}
+}
+</style>
+</head>
+<body style="height:700px">
+
+<p><b>Note:</b> This example does not work in Internet Explorer 9 and earlier versions.</p>
+<div style="background-color:green; width:150px; height:30px; position:fixed; top:0; left:0;"></div>
+<div id="s"></div>
+<div id="t"></div>
+
+</body>
+</html>
