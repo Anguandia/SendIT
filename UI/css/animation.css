@@ -113,6 +113,7 @@
     #bodi {
         width: 250px;
         height: 150px;
+        color: white;
     }
     #cabin {
         height: 150px;
@@ -140,6 +141,8 @@
         width: 150px;
         margin-top: 70px;
         background: navy;
+        text-align: center;
+        padding-top: 10%;
         left: 0%;
         float: left;
         box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;

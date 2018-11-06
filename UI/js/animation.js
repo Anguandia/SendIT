@@ -2,7 +2,7 @@ document.write('<link rel="stylesheet" href="css/animation.css">\
 <div id="person">\
 <div id="car">\
     <div id="bodi">\
-        <div id="trunk"></div>\
+        <div id="trunk"><span>SendIT</span></div>\
         <div id="cabin"></div>\
     </div><br>\
     <div id="tyres" >\
