@@ -47,8 +47,8 @@
 #submit{
     background-color: blue;
 }
-#remember_me, #rem{
-    margin-top  : 4%;
+.check{
+    margin  : 2% 4% auto auto;
 }
 #main p{
     text-align: center;

@@ -1,0 +1,210 @@
+    #person{
+        height: 35%;
+        width: 100%;
+    }
+    #head {
+      height: 100px;
+      width: 100px;
+      left: -5%;
+      margin-top: -15%;
+      margin-bottom: 0%;
+      border-radius: 50%;
+      text-align: center;
+      /*vertical-align: middle;*/
+      font-size: 500%;
+      position: relative;
+      background: rgba(39, 14, 14, 0.719);
+      box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
+      display: inline-block;
+    }
+    #head::after {
+      background-color: rgba(218, 168, 168, 0.705);
+      content: '';
+      height: 25%;
+      width: 6%;
+      position: absolute;
+      top: 4%;
+      left: 15%;
+      border-radius: 60%;
+      transform: rotate(40deg);
+    }
+    #body {
+      height: 100px;
+      margin-top: -118px;
+      width: 80px;
+      border-top-left-radius: 40%;
+      border-top-right-radius: 20%;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 500%;
+      position: relative;
+      background: purple;
+      box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
+      display: inline-block;
+      margin-left: 10px;
+    }
+    #arm {
+      height: 80px;
+      width: 50px;
+      border-top-left-radius: 20%;
+      border-top-right-radius: 20%;
+      left: 5px;
+      vertical-align: middle;
+      font-size: 50%;
+      position: relative;
+      background: purple;
+      box-shadow: inset -10px -10px 40px #000, 10px 10px 10px black, inset 0px 0px 5px black;
+      display: inline-block;
+      z-index: 1;
+      animation-name: send;
+      animation-delay: 2s;
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+    }
+    #legs {
+      height: 50px;
+      width: 60px;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 500%;
+      position: relative;
+      background: rgba(255, 111, 255, 0.555);
+      box-shadow: inset -10px -10px 40px #000, 10px 10px 10px black, inset 0px 0px 5px black;
+      display: inline-block;
+      margin-left: 20px;
+    }
+    #feet {
+      height: 20px;
+      width: 100px;
+      border-top-right-radius: 80%;
+      text-align: center;
+      vertical-align: middle;
+      font-size: 500%;
+      position: relative;
+      background: black;
+      box-shadow: inset -10px -10px 5px #000, 10px 0px 15px black, inset 0px 0px 5px black;
+      display: inline-block;
+      margin-left: 20px;
+    }
+    #parcel{
+      width: 40px;
+      height: 0px;
+      position: relative;
+      background: yellow;
+      top: 80px;
+      animation-name: parcel;
+      animation-duration: 10s;
+      animation-delay: 5s;
+      z-index: -10;
+      animation-iteration-count: infinite;
+    }
+    #car {
+        width: 250px;
+        height: 180px;
+        top:90%; 
+        left: 50%;
+        position: relative;
+        animation-name: car;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        z-index: 1;
+        animation-iteration-count: infinite;
+    }
+    #bodi {
+        width: 250px;
+        height: 150px;
+    }
+    #cabin {
+        height: 150px;
+        width: 100px;
+        border-top-right-radius: 40%;
+        left: 0px;
+        font-size: 500%;
+        position: relative;
+        background: navy;
+        float: right;
+        box-shadow: inset -10px -10px 100px #000, 10px 10px 40px black, inset 0px 0px 10px black;
+    }
+    #cabin::after {
+        background-color: silver;
+        content: '';
+        height: 40%;
+        width: 70%;
+        position: absolute;
+        top: 8%;
+        left: 15%;
+        border-top-right-radius: 60%;
+    }
+    #trunk {
+        height: 80px;
+        width: 150px;
+        margin-top: 70px;
+        background: navy;
+        left: 0%;
+        float: left;
+        box-shadow: inset -10px -10px 100px #000, 10px 10px 20px black, inset 0px 0px 10px black;
+    }
+    #tyres {
+        left: 0%;
+        vertical-align: middle;
+        margin-top: -5%;
+        width: 250px;
+        height: 50px;
+    }
+    #hind-tyre {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-left: 20px;
+        margin-top: -20px;
+        font-size: 500%;
+        position: relative;
+        background: black;
+        float: left;
+        box-shadow: inset -1px -1px 10px gray, 10px 0px 40px black, inset 0px 0px 10px black;
+    }
+    #front-tyre {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 30px;
+        margin-top: -20px;
+        font-size: 500%;
+        position: relative;
+        background: black;
+        float: right;
+        box-shadow: inset -1px -1px 10px gray, 10px 0px 40px black, inset 0px 0px 10px black;
+    }
+    #hind-tyre::after {
+        background-color: silver;
+        content: '';
+        height: 30%;
+        width: 5%;
+        position: absolute;
+        top: 8%;
+        left: 15%;
+        border-bottom-left-radius: 50%;
+        border-top-left-radius: 50%;
+        transform: rotate(40deg);
+    }
+    @keyframes send{
+      40% {transform: rotate(-90deg)}
+      50% {transform: rotate(-90deg)}
+    }
+    @keyframes parcel{
+      /*0% {width: 20px; height: 10px;}*/
+      40% {height: 40px; margin-top: 60px; left: -50px}
+      41% {background: none; height: 0px}
+      43% {background: none; height: 0px}
+    }
+    @keyframes car{
+        0% {top:90%; left: 50%; transform: rotateZ(180deg)}
+        20% {top:50%; left: 110px;}
+        40% {top:50%; left: 110PX;}
+        7% {top:50%; left: 110PX; transform: rotateY(180deg)}
+        70% {top:50%; left: 110px;}
+        80% {top:50%; left: 80%;}
+        85% {top:50%; left: 80%;}
+        90% {top:90%; left: 50%;}
+        100% {top:90%; left: 50%;}
+    }
