@@ -6,7 +6,11 @@
     padding: 1% 2% 0%;
     min-width:100%; 
     background: linear-gradient(to left, violet, rgb(238, 164, 238));
-    margin-bottom: 4%;
+<<<<<<< HEAD
+    margin-bottom: 2%;
+=======
+    margin-bottom: 1%;
+>>>>>>> develop
 }
 /*Styles for search/sort tabs*/
 #bar tab a{
